@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Laskutustiedostoapuri;
+package invoiceassistant;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,7 +17,7 @@ import javax.swing.JFrame;
 public class WindowHandler {
 
     public WindowHandler(InvoiceAnalyser invoiceAnalyser, Map<String, Integer> invoiceItems, Map<String, User> newUsers, Map<String, User> currentUsers, UserSaver userSaver) {
-        JFrame frameForItemSelect = new JFrame("Laskutustiedostoapuri");
+        JFrame frameForItemSelect = new JFrame("invoiceassistant");
         ActionListener al = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
