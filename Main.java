@@ -28,7 +28,7 @@ public class Main {
 
                 List<String> linesFromOldFile = fileReader.ReadFile("Asiakkaat.txt");
                 CustomerInformationParser.Parse(linesFromOldFile, customers);
-                List<String> linesFromCurrentFile = fileReader.ReadFile("TETO_0_20170215_0745_59.txt");
+                List<String> linesFromCurrentFile = fileReader.ReadFile("Laskutustiedosto.txt");
                 CustomerInformationParser.Parse(linesFromCurrentFile, customers);
 
                 Map<String, User> oldUsers = UserInfoParserForOldFile.parse(linesFromOldFile, customers, invoiceItems.size());
